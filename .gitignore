@@ -1,0 +1,28 @@
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# --- build outputs ---
+build/
+dist/
+wheels/
+
+# --- caches / tooling ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+htmlcov/
+
+# --- editor / OS ---
+.DS_Store
+.idea/
+.vscode/
+*.log
+tmp/

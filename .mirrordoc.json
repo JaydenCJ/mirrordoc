@@ -1,0 +1,4 @@
+{
+  "exclude": ["examples/demo-docs/*"],
+  "ignore_links": ["https://img.shields.io/*"]
+}

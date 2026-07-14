@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14">
+  <!-- Terminal transcript of a real run against examples/demo-docs:
+       the faithful Japanese mirror passes, the Chinese mirror is caught
+       with a missing section, a localized code block, and a dropped link.
+       Text is copied verbatim from an actual execution. -->
+  <rect width="920" height="520" rx="10" fill="#0d1117"/>
+  <rect width="920" height="34" rx="10" fill="#161b22"/>
+  <rect y="20" width="920" height="14" fill="#161b22"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="42" cy="17" r="6" fill="#febc2e"/>
+  <circle cx="62" cy="17" r="6" fill="#28c840"/>
+  <text x="460" y="22" fill="#8b949e" text-anchor="middle" font-size="12">mirrordoc — translated docs, structurally in sync</text>
+  <g fill="#c9d1d9">
+    <text x="24" y="64"><tspan fill="#7ee787">$</tspan> mirrordoc check examples/demo-docs --no-stale</text>
+    <text x="24" y="96">README.md &lt;-&gt; README.ja.md [ja]</text>
+    <text x="24" y="120" fill="#7ee787">  in sync</text>
+    <text x="24" y="152">README.md &lt;-&gt; README.zh.md [zh]</text>
+    <text x="24" y="176"><tspan fill="#f85149">  ERROR heading-missing </tspan>  mirror is missing a level-2 heading: "Roadmap" (source L30)</text>
+    <text x="24" y="200"><tspan fill="#f85149">  ERROR codeblock-drift </tspan>  code block #2 content differs from source (first difference</text>
+    <text x="24" y="224">                           at block line 4; source L15, mirror L15)</text>
+    <text x="24" y="248"><tspan fill="#f85149">  ERROR link-missing    </tspan>  mirror is missing 1 link(s) to CHANGELOG.md</text>
+    <text x="24" y="272"><tspan fill="#d29922">  WARN  list-items      </tspan>  source has 2 list items, mirror has 0</text>
+    <text x="24" y="304">docs/guide.md &lt;-&gt; docs/ja/guide.md [ja]</text>
+    <text x="24" y="328" fill="#7ee787">  in sync</text>
+    <text x="24" y="360" fill="#f85149">FAIL: 3 error(s), 1 warning(s) across 3 pair(s)</text>
+    <text x="24" y="392" fill="#8b949e"># prose may differ — that is the translation. structure may not.</text>
+    <text x="24" y="432"><tspan fill="#7ee787">$</tspan> mirrordoc stamp README.zh.md</text>
+    <text x="24" y="456">stamped README.zh.md at 4f2a9c1d08b3 (source: README.md)</text>
+    <text x="24" y="488" fill="#8b949e"># check now fails the moment README.md gains commits the mirror hasn't seen.</text>
+  </g>
+</svg>
