@@ -9,7 +9,7 @@ description = "Parity gate for translated Markdown mirrors: offline structure di
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "JaydenCJ" }]
+authors = [{ name = "JaydenCJ", email = "aisingioro.kiyon@gmail.com" }]
 keywords = ["markdown", "i18n", "translation", "documentation", "lint", "ci", "git", "readme"]
 classifiers = [
     "Development Status :: 3 - Alpha",
